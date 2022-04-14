@@ -8,7 +8,8 @@ uses
   uDraftProposal in 'uDraftProposal.pas' {DraftProposalForm},
   uProposal in 'uProposal.pas' {ProposalForm},
   Vcl.Themes,
-  Vcl.Styles;
+  Vcl.Styles,
+  uNewModule in 'uNewModule.pas' {Form1};
 
 {$R *.res}
 
@@ -21,5 +22,6 @@ begin
   Application.CreateForm(TDraftProposalForm, DraftProposalForm);
   Application.CreateForm(TProposalForm, ProposalForm);
   Application.CreateForm(TLeadsForm, LeadsForm);
+  Application.CreateForm(TForm1, Form1);
   Application.Run;
 end.

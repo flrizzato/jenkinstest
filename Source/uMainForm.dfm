@@ -8,6 +8,18 @@ object MainForm: TMainForm
   CustomTitleBar.Control = TitleBarPanel1
   CustomTitleBar.Enabled = True
   CustomTitleBar.Height = 31
+  CustomTitleBar.BackgroundColor = 5911323
+  CustomTitleBar.ForegroundColor = clWhite
+  CustomTitleBar.InactiveBackgroundColor = clWhite
+  CustomTitleBar.InactiveForegroundColor = 10066329
+  CustomTitleBar.ButtonForegroundColor = clWhite
+  CustomTitleBar.ButtonBackgroundColor = 5911323
+  CustomTitleBar.ButtonHoverForegroundColor = clWhite
+  CustomTitleBar.ButtonHoverBackgroundColor = 8144421
+  CustomTitleBar.ButtonPressedForegroundColor = clWhite
+  CustomTitleBar.ButtonPressedBackgroundColor = 11362612
+  CustomTitleBar.ButtonInactiveForegroundColor = 10066329
+  CustomTitleBar.ButtonInactiveBackgroundColor = clWhite
   Constraints.MinHeight = 575
   Constraints.MinWidth = 550
   DoubleBuffered = True
@@ -18,12 +30,10 @@ object MainForm: TMainForm
   Font.Style = []
   GlassFrame.Enabled = True
   GlassFrame.Top = 31
-  OldCreateOrder = False
   StyleElements = [seFont, seClient]
   OnActivate = FormActivate
   OnCreate = FormCreate
   OnResize = FormResize
-  PixelsPerInch = 96
   TextHeight = 13
   object SplitView: TSplitView
     Left = 0
@@ -953,23 +963,20 @@ object MainForm: TMainForm
     TabOrder = 1
     TabWidth = 75
     OnChange = PageControlChange
-    ExplicitWidth = 930
     object DashboardTab: TTabSheet
       Caption = 'Dashboard'
       ImageIndex = 3
-      ExplicitWidth = 916
       object Panel5: TPanel
         AlignWithMargins = True
         Left = 25
         Top = 3
-        Width = 894
+        Width = 888
         Height = 67
         Margins.Left = 25
         Align = alTop
         BevelOuter = bvNone
         FullRepaint = False
         TabOrder = 0
-        ExplicitWidth = 888
         object Label4: TLabel
           AlignWithMargins = True
           Left = 108
@@ -1008,14 +1015,13 @@ object MainForm: TMainForm
         AlignWithMargins = True
         Left = 25
         Top = 76
-        Width = 872
+        Width = 866
         Height = 477
         Margins.Left = 25
         Margins.Right = 25
         Align = alClient
         BevelOuter = bvNone
         TabOrder = 1
-        ExplicitWidth = 866
         object RelativePanel1: TRelativePanel
           AlignWithMargins = True
           Left = 3
@@ -1715,7 +1721,7 @@ object MainForm: TMainForm
           Left = 108
           Top = 5
           Width = 137
-          Height = 57
+          Height = 45
           Margins.Top = 5
           Margins.Bottom = 5
           Align = alLeft
@@ -1727,7 +1733,6 @@ object MainForm: TMainForm
           Font.Style = [fsBold]
           ParentFont = False
           Layout = tlCenter
-          ExplicitHeight = 45
         end
         object VirtualImage2: TVirtualImage
           Left = 0
@@ -1793,11 +1798,11 @@ object MainForm: TMainForm
           TabOrder = 0
           OnResize = AcctsRelativePanelResize
           DesignSize = (
-            646
+            640
             67)
           object AcctSearchBox: TSearchBox
             AlignWithMargins = True
-            Left = 460
+            Left = 454
             Top = 15
             Width = 163
             Height = 36
@@ -1815,7 +1820,7 @@ object MainForm: TMainForm
             OnKeyPress = AcctSearchBoxKeyPress
           end
           object ExportAcctsButton: TSpeedButton
-            Left = 121
+            Left = 115
             Top = 14
             Width = 112
             Height = 38
@@ -1834,7 +1839,7 @@ object MainForm: TMainForm
             OnClick = ExportAcctsButtonClick
           end
           object RemoveAcctButton: TSpeedButton
-            Left = 233
+            Left = 227
             Top = 14
             Width = 112
             Height = 38
@@ -1853,7 +1858,7 @@ object MainForm: TMainForm
             OnClick = RemoveAcctButtonClick
           end
           object CreateAcctButton: TSpeedButton
-            Left = 345
+            Left = 339
             Top = 14
             Width = 112
             Height = 38
@@ -1878,7 +1883,7 @@ object MainForm: TMainForm
         AlignWithMargins = True
         Left = 25
         Top = 76
-        Width = 872
+        Width = 866
         Height = 446
         Margins.Left = 25
         Margins.Right = 25
@@ -1892,6 +1897,7 @@ object MainForm: TMainForm
         ParentDoubleBuffered = False
         ScrollBars = ssVertical
         TabOrder = 1
+        ExplicitWidth = 872
         ColWidths = (
           64
           64)
@@ -1900,7 +1906,7 @@ object MainForm: TMainForm
         AlignWithMargins = True
         Left = 25
         Top = 528
-        Width = 872
+        Width = 866
         Height = 25
         Margins.Left = 25
         Margins.Right = 25
@@ -1908,11 +1914,11 @@ object MainForm: TMainForm
         Align = alBottom
         Orientation = orHorizontal
         TabOrder = 2
+        ExplicitWidth = 872
       end
     end
     object LeadsTab: TTabSheet
       Caption = 'Leads'
-      ExplicitWidth = 916
       object Splitter1: TSplitter
         Left = 261
         Top = 73
@@ -1969,7 +1975,7 @@ object MainForm: TMainForm
           Left = 108
           Top = 5
           Width = 84
-          Height = 57
+          Height = 45
           Margins.Top = 5
           Margins.Bottom = 5
           Align = alLeft
@@ -1981,7 +1987,6 @@ object MainForm: TMainForm
           Font.Style = [fsBold]
           ParentFont = False
           Layout = tlCenter
-          ExplicitHeight = 45
         end
         object VirtualImage3: TVirtualImage
           Left = 0
@@ -2050,10 +2055,10 @@ object MainForm: TMainForm
           OnResize = LeadsRelativePanelResize
           ExplicitWidth = 665
           DesignSize = (
-            671
+            665
             61)
           object CreateLeadButton: TSpeedButton
-            Left = 349
+            Left = 343
             Top = 11
             Width = 153
             Height = 38
@@ -2072,7 +2077,7 @@ object MainForm: TMainForm
             OnClick = CreateLeadButtonClick
           end
           object ExportLeadsButton: TSpeedButton
-            Left = 43
+            Left = 37
             Top = 11
             Width = 153
             Height = 38
@@ -2092,7 +2097,7 @@ object MainForm: TMainForm
           end
           object LeadsSearchBox: TSearchBox
             AlignWithMargins = True
-            Left = 505
+            Left = 499
             Top = 12
             Width = 163
             Height = 36
@@ -2108,7 +2113,7 @@ object MainForm: TMainForm
             OnKeyPress = LeadsSearchBoxKeyPress
           end
           object ViewLeadButton: TSpeedButton
-            Left = 196
+            Left = 190
             Top = 11
             Width = 153
             Height = 38
@@ -2142,7 +2147,7 @@ object MainForm: TMainForm
         object Label27: TLabel
           Left = 1
           Top = 1
-          Width = 231
+          Width = 30
           Height = 19
           Align = alTop
           Alignment = taCenter
@@ -2153,7 +2158,6 @@ object MainForm: TMainForm
           Font.Name = 'Segoe UI'
           Font.Style = [fsBold]
           ParentFont = False
-          ExplicitWidth = 30
         end
         object NewLeadsSG: TStringGrid
           Tag = 3
@@ -2189,17 +2193,16 @@ object MainForm: TMainForm
         AlignWithMargins = True
         Left = 267
         Top = 76
-        Width = 208
+        Width = 202
         Height = 446
         Align = alClient
         Caption = 'ActiveLeadsPanel'
         Constraints.MinWidth = 202
         TabOrder = 3
-        ExplicitWidth = 202
         object Label28: TLabel
           Left = 1
           Top = 1
-          Width = 206
+          Width = 42
           Height = 19
           Align = alTop
           Alignment = taCenter
@@ -2210,7 +2213,6 @@ object MainForm: TMainForm
           Font.Name = 'Segoe UI'
           Font.Style = [fsBold]
           ParentFont = False
-          ExplicitWidth = 42
         end
         object ActiveLeadsSG: TStringGrid
           Tag = 5
@@ -2244,18 +2246,17 @@ object MainForm: TMainForm
       object ProposalSentPanel: TPanel
         Tag = 3
         AlignWithMargins = True
-        Left = 484
+        Left = 478
         Top = 76
         Width = 203
         Height = 446
         Align = alRight
         Caption = 'ProposalSentPanel'
         TabOrder = 4
-        ExplicitLeft = 478
         object Label29: TLabel
           Left = 1
           Top = 1
-          Width = 201
+          Width = 93
           Height = 19
           Align = alTop
           Alignment = taCenter
@@ -2266,7 +2267,6 @@ object MainForm: TMainForm
           Font.Name = 'Segoe UI'
           Font.Style = [fsBold]
           ParentFont = False
-          ExplicitWidth = 93
         end
         object ProposalSentLeadsSG: TStringGrid
           Tag = 3
@@ -2300,7 +2300,7 @@ object MainForm: TMainForm
       object ClosedPanel: TPanel
         Tag = 4
         AlignWithMargins = True
-        Left = 696
+        Left = 690
         Top = 76
         Width = 201
         Height = 446
@@ -2308,11 +2308,10 @@ object MainForm: TMainForm
         Align = alRight
         Caption = 'ClosedPanel'
         TabOrder = 5
-        ExplicitLeft = 690
         object Label30: TLabel
           Left = 1
           Top = 1
-          Width = 199
+          Width = 45
           Height = 19
           Align = alTop
           Alignment = taCenter
@@ -2323,7 +2322,6 @@ object MainForm: TMainForm
           Font.Name = 'Segoe UI'
           Font.Style = [fsBold]
           ParentFont = False
-          ExplicitWidth = 45
         end
         object ClosedLeadsSG: TStringGrid
           Tag = 3
@@ -2374,7 +2372,7 @@ object MainForm: TMainForm
           Left = 108
           Top = 5
           Width = 231
-          Height = 57
+          Height = 45
           Margins.Top = 5
           Margins.Bottom = 5
           Align = alLeft
@@ -2386,7 +2384,6 @@ object MainForm: TMainForm
           Font.Style = [fsBold]
           ParentFont = False
           Layout = tlCenter
-          ExplicitHeight = 45
         end
         object VirtualImage4: TVirtualImage
           Left = 0
@@ -2442,11 +2439,11 @@ object MainForm: TMainForm
           TabOrder = 0
           OnResize = ProposalsRelativePanelResize
           DesignSize = (
-            552
+            546
             67)
           object SalesSearchBox: TSearchBox
             AlignWithMargins = True
-            Left = 366
+            Left = 360
             Top = 15
             Width = 163
             Height = 36
@@ -2466,7 +2463,7 @@ object MainForm: TMainForm
             OnKeyPress = SalesSearchBoxKeyPress
           end
           object CancelProposalButton: TSpeedButton
-            Left = 121
+            Left = 115
             Top = 14
             Width = 121
             Height = 38
@@ -2485,7 +2482,7 @@ object MainForm: TMainForm
             OnClick = CancelProposalButtonClick
           end
           object CompleteProposalButton: TSpeedButton
-            Left = 242
+            Left = 236
             Top = 14
             Width = 121
             Height = 38
@@ -2509,7 +2506,7 @@ object MainForm: TMainForm
         AlignWithMargins = True
         Left = 25
         Top = 76
-        Width = 872
+        Width = 866
         Height = 446
         Margins.Left = 25
         Margins.Right = 25
@@ -2522,6 +2519,7 @@ object MainForm: TMainForm
         Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goColSizing, goRowSelect]
         ParentDoubleBuffered = False
         TabOrder = 1
+        ExplicitWidth = 872
         ColWidths = (
           64)
       end
@@ -2529,7 +2527,7 @@ object MainForm: TMainForm
         AlignWithMargins = True
         Left = 25
         Top = 528
-        Width = 872
+        Width = 866
         Height = 25
         Margins.Left = 25
         Margins.Right = 25
@@ -2538,6 +2536,7 @@ object MainForm: TMainForm
         Align = alBottom
         Orientation = orHorizontal
         TabOrder = 2
+        ExplicitWidth = 872
       end
     end
     object MarketingTab: TTabSheet
@@ -2559,7 +2558,7 @@ object MainForm: TMainForm
           Left = 108
           Top = 5
           Width = 156
-          Height = 57
+          Height = 45
           Margins.Top = 5
           Margins.Bottom = 5
           Align = alLeft
@@ -2571,7 +2570,6 @@ object MainForm: TMainForm
           Font.Style = [fsBold]
           ParentFont = False
           Layout = tlCenter
-          ExplicitHeight = 45
         end
         object VirtualImage5: TVirtualImage
           Left = 0
@@ -2617,11 +2615,11 @@ object MainForm: TMainForm
           TabOrder = 0
           OnResize = MarketingRelativePanelResize
           DesignSize = (
-            627
+            621
             67)
           object EmailsSearchBox: TSearchBox
             AlignWithMargins = True
-            Left = 441
+            Left = 435
             Top = 15
             Width = 163
             Height = 36
@@ -2639,7 +2637,7 @@ object MainForm: TMainForm
             OnKeyPress = EmailsSearchBoxKeyPress
           end
           object ExportEmailsButton: TSpeedButton
-            Left = 317
+            Left = 311
             Top = 14
             Width = 121
             Height = 38
@@ -2663,7 +2661,7 @@ object MainForm: TMainForm
         AlignWithMargins = True
         Left = 25
         Top = 76
-        Width = 872
+        Width = 866
         Height = 477
         Margins.Left = 25
         Margins.Right = 25
@@ -2676,6 +2674,7 @@ object MainForm: TMainForm
         Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goColSizing, goRowSelect]
         ParentDoubleBuffered = False
         TabOrder = 1
+        ExplicitWidth = 872
         ColWidths = (
           604)
       end
@@ -2687,7 +2686,7 @@ object MainForm: TMainForm
         AlignWithMargins = True
         Left = 25
         Top = 76
-        Width = 872
+        Width = 866
         Height = 455
         Margins.Left = 25
         Margins.Right = 25
@@ -2712,24 +2711,27 @@ object MainForm: TMainForm
         ParentFont = False
         SelectionMode = smMultiple
         TabOrder = 0
+        ExplicitWidth = 360
+        ExplicitHeight = 256
       end
       object Panel4: TPanel
         AlignWithMargins = True
         Left = 25
         Top = 3
-        Width = 894
+        Width = 888
         Height = 67
         Margins.Left = 25
         Align = alTop
         BevelOuter = bvNone
         FullRepaint = False
         TabOrder = 1
+        ExplicitWidth = 894
         object Label3: TLabel
           AlignWithMargins = True
           Left = 108
           Top = 5
           Width = 132
-          Height = 57
+          Height = 45
           Margins.Top = 5
           Margins.Bottom = 5
           Align = alLeft
@@ -2741,7 +2743,6 @@ object MainForm: TMainForm
           Font.Style = [fsBold]
           ParentFont = False
           Layout = tlCenter
-          ExplicitHeight = 45
         end
         object VirtualImage6: TVirtualImage
           Left = 0
@@ -2778,7 +2779,7 @@ object MainForm: TMainForm
           Left = 108
           Top = 5
           Width = 81
-          Height = 57
+          Height = 45
           Margins.Top = 5
           Margins.Bottom = 5
           Align = alLeft
@@ -2790,7 +2791,6 @@ object MainForm: TMainForm
           Font.Style = [fsBold]
           ParentFont = False
           Layout = tlCenter
-          ExplicitHeight = 45
         end
         object VirtualImage7: TVirtualImage
           Left = 0
@@ -2846,11 +2846,11 @@ object MainForm: TMainForm
           TabOrder = 0
           OnResize = UsersRelativePanelResize
           DesignSize = (
-            702
+            696
             67)
           object SearchBox7: TSearchBox
             AlignWithMargins = True
-            Left = 516
+            Left = 510
             Top = 15
             Width = 163
             Height = 36
@@ -2867,7 +2867,7 @@ object MainForm: TMainForm
             TextHint = 'Search'
           end
           object CreateUserButton: TSpeedButton
-            Left = 392
+            Left = 386
             Top = 14
             Width = 121
             Height = 38
@@ -2886,7 +2886,7 @@ object MainForm: TMainForm
             OnClick = CreateUserButtonClick
           end
           object RemoveUserButton: TSpeedButton
-            Left = 271
+            Left = 265
             Top = 14
             Width = 121
             Height = 38
@@ -2911,7 +2911,7 @@ object MainForm: TMainForm
         AlignWithMargins = True
         Left = 25
         Top = 76
-        Width = 872
+        Width = 866
         Height = 446
         Margins.Left = 25
         Margins.Right = 25
@@ -2925,6 +2925,7 @@ object MainForm: TMainForm
         ParentDoubleBuffered = False
         ScrollBars = ssVertical
         TabOrder = 1
+        ExplicitWidth = 872
         ColWidths = (
           64
           64)
@@ -2933,7 +2934,7 @@ object MainForm: TMainForm
         AlignWithMargins = True
         Left = 25
         Top = 528
-        Width = 872
+        Width = 866
         Height = 25
         Margins.Left = 25
         Margins.Right = 25
@@ -2941,6 +2942,7 @@ object MainForm: TMainForm
         Align = alBottom
         Orientation = orHorizontal
         TabOrder = 2
+        ExplicitWidth = 872
       end
     end
   end
@@ -2949,6 +2951,7 @@ object MainForm: TMainForm
     Top = 0
     Width = 1130
     Height = 30
+    CustomButtons = <>
     object UsernameComboBox: TComboBox
       AlignWithMargins = True
       Left = 842
@@ -2961,7 +2964,6 @@ object MainForm: TMainForm
       Margins.Bottom = 4
       Align = alRight
       DoubleBuffered = True
-      ExtendedUI = False
       ParentDoubleBuffered = False
       TabOrder = 0
       Text = 'CRMUser'
@@ -2981,7 +2983,6 @@ object MainForm: TMainForm
       Margins.Bottom = 4
       Align = alRight
       DoubleBuffered = True
-      ExtendedUI = False
       ParentDoubleBuffered = False
       TabOrder = 1
       TextHint = 'VCL Style'
@@ -3242,109 +3243,90 @@ object MainForm: TMainForm
   end
   object VirtualImageList1: TVirtualImageList
     AutoFill = True
-    DisabledGrayscale = False
-    DisabledSuffix = '_Disabled'
     Images = <
       item
         CollectionIndex = 0
         CollectionName = 'baseline_list_white'
-        Disabled = False
         Name = 'baseline_list_white'
       end
       item
         CollectionIndex = 1
         CollectionName = 'baseline_account_balance_white'
-        Disabled = False
         Name = 'baseline_account_balance_white'
       end
       item
         CollectionIndex = 2
         CollectionName = 'baseline_account_box_white'
-        Disabled = False
         Name = 'baseline_account_box_white'
       end
       item
         CollectionIndex = 3
         CollectionName = 'baseline_add_white'
-        Disabled = False
         Name = 'baseline_add_white'
       end
       item
         CollectionIndex = 4
         CollectionName = 'baseline_attachment_white'
-        Disabled = False
         Name = 'baseline_attachment_white'
       end
       item
         CollectionIndex = 5
         CollectionName = 'baseline_calendar_today_white'
-        Disabled = False
         Name = 'baseline_calendar_today_white'
       end
       item
         CollectionIndex = 6
         CollectionName = 'baseline_cloud_download_white'
-        Disabled = False
         Name = 'baseline_cloud_download_white'
       end
       item
         CollectionIndex = 7
         CollectionName = 'baseline_cloud_upload_white'
-        Disabled = False
         Name = 'baseline_cloud_upload_white'
       end
       item
         CollectionIndex = 8
         CollectionName = 'baseline_contact_mail_white'
-        Disabled = False
         Name = 'baseline_contact_mail_white'
       end
       item
         CollectionIndex = 9
         CollectionName = 'baseline_create_white'
-        Disabled = False
         Name = 'baseline_create_white'
       end
       item
         CollectionIndex = 10
         CollectionName = 'baseline_dashboard_white'
-        Disabled = False
         Name = 'baseline_dashboard_white'
       end
       item
         CollectionIndex = 11
         CollectionName = 'baseline_email_white'
-        Disabled = False
         Name = 'baseline_email_white'
       end
       item
         CollectionIndex = 12
         CollectionName = 'baseline_launch_white'
-        Disabled = False
         Name = 'baseline_launch_white'
       end
       item
         CollectionIndex = 13
         CollectionName = 'baseline_remove_white'
-        Disabled = False
         Name = 'baseline_remove_white'
       end
       item
         CollectionIndex = 14
         CollectionName = 'baseline_clear_white'
-        Disabled = False
         Name = 'baseline_clear_white'
       end
       item
         CollectionIndex = 15
         CollectionName = 'baseline_menu_white'
-        Disabled = False
         Name = 'baseline_menu_white'
       end
       item
         CollectionIndex = 16
         CollectionName = 'baseline_whatshot_white'
-        Disabled = False
         Name = 'baseline_whatshot_white'
       end>
     ImageCollection = ImageCollection1
