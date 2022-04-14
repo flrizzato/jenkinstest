@@ -25,6 +25,8 @@ type
     { Public declarations }
     procedure LoadProposal(ALeadId: Integer; const ADocument: String);
   end;
+  
+  // just a comment
 
 var
   ProposalForm: TProposalForm;
