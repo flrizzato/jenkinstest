@@ -26,7 +26,7 @@ type
     procedure LoadProposal(ALeadId: Integer; const ADocument: String);
   end;
   
-  // just a comment
+  // just a comment v2
 
 var
   ProposalForm: TProposalForm;
