@@ -95,6 +95,7 @@ implementation
 {$R *.dfm}
 
 procedure TDM.InitializeTable(ATable: TFDTable; AMemTable: TFDMemTable);
+var abc: string;
 begin
   ATable.FieldDefs.Clear;
   ATable.FieldDefs.Assign(AMemTable.FieldDefs);

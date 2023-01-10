@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <BorlandProject>
 	<Transactions>
-    <Transaction>2022/04/14 18:14:41.000.403,C:\Users\Public\Documents\Embarcadero\Studio\22.0\Samples\Object Pascal\VCL\Windows 10 CRM Demo\Unit1.dfm=C:\Users\Public\Documents\Embarcadero\Studio\22.0\Samples\Object Pascal\VCL\Windows 10 CRM Demo\uNewModule.dfm</Transaction>
-    <Transaction>2022/04/14 18:14:41.000.403,C:\Users\Public\Documents\Embarcadero\Studio\22.0\Samples\Object Pascal\VCL\Windows 10 CRM Demo\Unit1.pas=C:\Users\Public\Documents\Embarcadero\Studio\22.0\Samples\Object Pascal\VCL\Windows 10 CRM Demo\uNewModule.pas</Transaction>
+    <Transaction>2022/04/14 18:14:41.000.403,C:\Users\Public\Documents\Embarcadero\Studio\22.0\Samples\Object Pascal\VCL\Windows 10 CRM Demo\uNewModule.pas=C:\Users\Public\Documents\Embarcadero\Studio\22.0\Samples\Object Pascal\VCL\Windows 10 CRM Demo\Unit1.pas</Transaction>
+    <Transaction>2022/04/14 18:14:41.000.403,C:\Users\Public\Documents\Embarcadero\Studio\22.0\Samples\Object Pascal\VCL\Windows 10 CRM Demo\uNewModule.dfm=C:\Users\Public\Documents\Embarcadero\Studio\22.0\Samples\Object Pascal\VCL\Windows 10 CRM Demo\Unit1.dfm</Transaction>
   </Transactions>
 </BorlandProject>
